@@ -1,0 +1,110 @@
+/* reset */
+*{
+    margin: 0;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+body
+{
+    font-family: Arial, Helvetica, sans-serif;
+}
+header
+{
+    border: solid 3px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+img
+{
+    border-radius: 50%;
+
+}
+
+ul
+{
+    display: flex;
+    list-style: none;
+    gap: 15px;
+}
+
+a
+{
+    text-decoration: none;
+    color: black;
+}
+
+.hero
+{
+    border: solid;
+    background: url(https://img.freepik.com/foto-gratis/deliciosa-hamburguesa-luz-brillante_23-2150902346.jpg?size=626&ext=jpg&ga=GA1.1.2008272138.1721520000&semt=ais_user);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    color: #fff;
+}
+
+h1
+{
+    font-size: 40px;
+    text-shadow: 1px 1px 2px #000;
+
+}
+
+p
+{
+    font-size: 18px;
+    text-shadow: 1px 1px 2px #000;
+}
+
+.btn-inicio
+{
+    margin-top: 20px;
+    display: block;
+    background-color: #ffa75f;
+    width: 140px;
+    padding: 10px 15px;
+    text-align: center;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+.productos {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.productos h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.productos-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.producto {
+    width: 150px;
+    text-align: center;
+}
+
+.producto img {
+    width: 100%;
+    height: 150px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+.producto p {
+    margin-top: 10px;
+    font-size: 16px;
+}
