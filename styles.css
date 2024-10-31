@@ -108,3 +108,19 @@ p
     margin-top: 10px;
     font-size: 16px;
 }
+
+section 
+{
+    display: flex;
+    justify-content: center;
+    margin-top: 28px;
+
+}
+
+section > a
+{
+    background-color: #ffa75f;
+    padding: 10px 20px;
+    border-radius: 8px;
+
+}
