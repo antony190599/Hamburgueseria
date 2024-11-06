@@ -1,0 +1,116 @@
+/* Reseteo de márgenes y paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos generales del cuerpo */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+main {
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+/* Estilo del título principal */
+h1 {
+    font-size: 2.5rem;
+    color: #4CAF50;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Estilo de las secciones dentro del main */
+div {
+    margin-bottom: 20px;
+}
+
+/* Títulos secundarios */
+h3 {
+    font-size: 1.6rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+/* Estilo para los inputs */
+input[type="text"] {
+    width: 100%;
+    padding: 12px 15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: border-color 0.3s;
+}
+
+input[type="text"]:focus {
+    border-color: #4CAF50;
+    outline: none;
+}
+
+/* Botones generales */
+button {
+    padding: 12px 20px;
+    margin: 10px;
+    font-size: 1rem;
+    color: white;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Efecto hover en los botones */
+button:hover {
+    background-color: #45a049;
+    transform: scale(1.05);
+}
+
+/* Estilo para el área de juego */
+#game-area {
+    background-color: #fafafa;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    min-height: 200px;
+    margin-top: 20px;
+}
+
+/* Efecto de sombra para los botones de acción */
+button:active {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transform: scale(1);
+}
+
+/* Ajustes de disposición para pantallas pequeñas */
+@media (max-width: 768px) {
+    main {
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    input[type="text"] {
+        padding: 10px 12px;
+    }
+
+    button {
+        padding: 10px 18px;
+        font-size: 0.9rem;
+    }
+}

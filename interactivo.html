@@ -4,14 +4,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./styles2.css">
 </head>
 <body>
     <main>
-        <h1>Web interactivo</h1>
-        <button onclick="registerBrothers()">Hermanos</button>
-        <button onclick="generateBlocks()">Bloques</button>
-        <button onclick="yankenpo()">yankenpo</button>
+        <h1>Juegos</h1>
+        <div>
+            <h3>Cambiar color de fondo</h3>
+            <input 
+            id="input-color"
+            type="text"
+            placeholder="Ingrese un color en ingles"/>
+            <button id="btn-change-color">Cambiar el color</button>
+
+        </div>
+        <div id="brothers-container">
+            <input  
+                id="input-register-brother"
+                type="text"
+                placeholder="Ingrese la cantidad de hermanos"/>
+            <button onclick="registerBrothers()">Activar el guardo de hermanos</button>
+            <input  
+                id="input-blocks-quantity"
+                type="text"
+                placeholder="Ingrese la cantidad de bloques"/>
+            <button onclick="generateBlocks()">Activar crear Bloques</button>
+            <select id="input-yankenpo">
+                <option value="">Elige: piedra, papel o tijera</option>
+                <option value="piedra">Piedra</option>
+                <option value="papel">Papel</option>
+                <option value="tijera">Tijera</option>
+            </select>
+            <button onclick="yankenpo()">Jugar yankenpo</button>
+            <div id="result-yankenpo"></div>
+        </div>
+        <div id="game-area"></div>
     </main>
     <script src="./app.js"></script>
 </body>
